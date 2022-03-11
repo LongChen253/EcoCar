@@ -14,8 +14,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
     private Button registerButton;
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()){
+    public void onClick(View view) {
+        switch (view.getId()){
             case R.id.LoginButton:
                 Toast.makeText(this, "Function Not Implemented Yet", Toast.LENGTH_SHORT).show();
                 break;
