@@ -10,11 +10,10 @@
         android:id="@+id/LoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:text="iniciar sessió"
-        app:layout_constraintEnd_toEndOf="@+id/LogPassword"
-        app:layout_constraintStart_toStartOf="@+id/LogPassword"
-        app:layout_constraintTop_toBottomOf="@+id/LogPassword" />
+        app:layout_constraintBottom_toTopOf="@+id/RegisterButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,18 +34,16 @@
         android:hint="Usuari"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/LogPassword"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Contrasenya"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/LogUsername"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/LogUsername"
@@ -56,23 +53,61 @@
         android:id="@+id/RecoverPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/forget_password"
         android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="w,3:1"
         app:layout_constraintEnd_toEndOf="@+id/RegisterButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/RegisterButton"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/RegisterButton" />
 
     <Button
         android:id="@+id/RegisterButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="registrar"
+        app:layout_constraintBottom_toTopOf="@+id/RecoverPassword"
         app:layout_constraintEnd_toEndOf="@+id/LoginButton"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/LoginButton"
-        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+        app:layout_constraintStart_toStartOf="@+id/LoginButton" />
+
+    <ImageView
+        android:id="@+id/SHPassword"
+        android:layout_width="36dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="280dp"
+        app:layout_constraintBottom_toBottomOf="@+id/LogPassword"
+        app:layout_constraintEnd_toEndOf="@+id/LogPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/LogPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/LogPassword"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/ic_show_password" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/LogUsername"
+        app:layout_constraintEnd_toStartOf="@+id/LogUsername"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/LogUsername"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/ic_username" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/LogPassword"
+        app:layout_constraintEnd_toStartOf="@+id/LogPassword"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/LogPassword"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/ic_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

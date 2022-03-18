@@ -20,7 +20,7 @@
         android:id="@+id/RegUsername"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Nou usuari"
         android:inputType="textPersonName"
@@ -33,36 +33,90 @@
         android:id="@+id/RegPassword"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Nova contrasenya"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/RegUsername"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/RegUsername"
-        app:layout_constraintTop_toBottomOf="@+id/RegUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/ErrUsername" />
 
     <EditText
         android:id="@+id/RegConfirmPas"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Confirmar contrasenya"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/RegPassword"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/RegPassword"
-        app:layout_constraintTop_toBottomOf="@+id/RegPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/ErrPassword" />
+
+    <EditText
+        android:id="@+id/RegEmail"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/RegConfirmPas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/RegConfirmPas"
+        app:layout_constraintTop_toBottomOf="@+id/ErrConfirmPas" />
 
     <Button
         android:id="@+id/RegButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginBottom="48dp"
         android:text="crear usuari"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ErrUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/RegUsername"
+        app:layout_constraintTop_toBottomOf="@+id/RegUsername" />
+
+    <TextView
+        android:id="@+id/ErrPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/RegPassword"
+        app:layout_constraintTop_toBottomOf="@+id/RegPassword" />
+
+    <TextView
+        android:id="@+id/ErrConfirmPas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/RegConfirmPas"
         app:layout_constraintTop_toBottomOf="@+id/RegConfirmPas" />
+
+    <TextView
+        android:id="@+id/ErrEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/RegEmail"
+        app:layout_constraintTop_toBottomOf="@+id/RegEmail" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
