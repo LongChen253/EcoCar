@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#58A3FF">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_image_default"
+                app:civ_border_color="#195B8C"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.33"/>
+
+            <TextView
+                android:id="@+id/Profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Long Chen"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/Profile_image"
+                app:layout_constraintStart_toStartOf="@+id/Profile_image"
+                app:layout_constraintTop_toBottomOf="@+id/Profile_image"
+                android:drawableRight="@drawable/ic_male"
+                android:drawablePadding="10dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/Profile_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="4.5"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:paddingBottom="30dp"
+                app:layout_constraintTop_toTopOf="@id/Profile_rating"
+                app:layout_constraintStart_toStartOf="@id/Profile_username"
+                app:layout_constraintEnd_toStartOf="@id/Profile_rating"
+                app:layout_constraintBottom_toBottomOf="@id/Profile_rating" />
+
+            <RatingBar
+                android:id="@+id/Profile_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="30dp"
+                app:layout_constraintTop_toBottomOf="@id/Profile_username"
+                app:layout_constraintStart_toEndOf="@id/Profile_star"
+                app:layout_constraintEnd_toEndOf="@id/Profile_username"
+                android:rating="4.5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                android:progressTint="@color/white">
+            </RatingBar>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Información personal"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="99">
+                </TextView>
+                <ImageButton
+                    android:id="@+id/Profile_editInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"
+                    android:background="#00000000"
+                    android:layout_weight="1">
+                </ImageButton>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:text="628617738"
+                android:textSize="16sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/Profile_contactEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:text="guaguapo253@gmail.com"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/Profile_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_birthday"
+                android:drawablePadding="10dp"
+                android:text="25/07/2000"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/Profile_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:text="Adre"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Profile_editPhoneLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de teléfono"
+                app:startIconDrawable="@drawable/ic_phone"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:endIconMode="clear_text"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Profile_editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Profile_editMailLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electróneo"
+                app:startIconDrawable="@drawable/ic_mail"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:endIconMode="clear_text"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Profile_editMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Profile_editBirthdayLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de nacimiento"
+                app:startIconDrawable="@drawable/ic_birthday"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:endIconMode="clear_text"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Profile_editBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Profile_editDirectionLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección"
+                app:startIconDrawable="@drawable/ic_location"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:endIconMode="clear_text"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Profile_editDirection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Profile_save_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="guardar"
+                android:visibility="gone"
+                android:backgroundTint="#2A7EBD" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biografía"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="99">
+                </TextView>
+                <ImageButton
+                    android:id="@+id/Profile_editBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"
+                    android:background="#00000000"
+                    android:layout_weight="1">
+                </ImageButton>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Profile_biography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todavía no tienes nada"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Profile_editBiographyLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mi biografía"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:endIconMode="clear_text"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Profile_editBiography"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Profile_save_biography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="guardar"
+                android:backgroundTint="#2A7EBD"
+                android:visibility="gone">
+            </Button>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mis preferencias"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="99">
+                </TextView>
+                <ImageButton
+                    android:id="@+id/Profile_editPre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"
+                    android:background="#00000000"
+                    android:layout_weight="1">
+                </ImageButton>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Profile_preferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todavía no tienes nada"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Profile_editPrefLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mis preferencias"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:endIconMode="clear_text"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Profile_editPref"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Profile_save_pref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="guardar"
+                android:backgroundTint="#2A7EBD"
+                android:visibility="gone">
+            </Button>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mis vehículos"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="99">
+                </TextView>
+                <ImageButton
+                    android:id="@+id/Profile_addCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_car"
+                    android:background="#00000000"
+                    android:layout_weight="1">
+                </ImageButton>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Selecciona tu coche"
+                app:startIconDrawable="@drawable/ic_car"
+                android:layout_marginTop="8dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/Profile_cars"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none">
+
+                </AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Profile_myPublishedTravels"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="8dp"
+                    android:text="Consultar mis viajes publicados"
+                    android:textColor="#3D8CEC"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Profile_myReservedTrips"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="8dp"
+                    android:text="Consultar mis viajes reservados"
+                    android:textColor="#3D8CEC"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Profile_opinions"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="8dp"
+                    android:text="Consultar mis comentarios escritos"
+                    android:textColor="#3D8CEC"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Profile_myOpinions"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="100dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="8dp"
+                    android:text="Consultar mis comentarios recibidos"
+                    android:textColor="#3D8CEC"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

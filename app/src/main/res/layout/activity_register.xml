@@ -4,119 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".Register">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="243dp"
-        android:layout_height="202dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="260dp"
+        android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_ecocar" />
+        app:srcCompat="@mipmap/ic_login_ecocar" />
 
-    <EditText
-        android:id="@+id/RegUsername"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RegEmailLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Nou usuari"
-        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        app:errorIconDrawable="@drawable/ic_error"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:layout_marginTop="4dp">
 
-    <EditText
-        android:id="@+id/RegPassword"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="Nova contrasenya"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/RegUsername"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/RegUsername"
-        app:layout_constraintTop_toBottomOf="@+id/ErrUsername" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/RegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/RegConfirmPas"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RegPasswordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="Confirmar contrasenya"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/RegPassword"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/RegPassword"
-        app:layout_constraintTop_toBottomOf="@+id/ErrPassword" />
+        android:layout_height="wrap_content"
+        android:hint="Nueva contraseña"
+        app:errorIconDrawable="@drawable/ic_error"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/RegEmailLayout"
+        app:layout_constraintStart_toStartOf="@+id/RegEmailLayout"
+        app:layout_constraintTop_toBottomOf="@+id/RegEmailLayout"
+        android:layout_marginTop="4dp">
 
-    <EditText
-        android:id="@+id/RegEmail"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/RegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RegConfirmPasLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@+id/RegConfirmPas"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/RegConfirmPas"
-        app:layout_constraintTop_toBottomOf="@+id/ErrConfirmPas" />
+        android:layout_height="wrap_content"
+        android:hint="Confirmar contraseña"
+        app:errorIconDrawable="@drawable/ic_error"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/RegPasswordLayout"
+        app:layout_constraintStart_toStartOf="@+id/RegPasswordLayout"
+        app:layout_constraintTop_toBottomOf="@+id/RegPasswordLayout"
+        android:layout_marginTop="4dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/RegConfirmPas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/RegButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:text="crear usuari"
+        android:layout_marginBottom="40dp"
+        android:text="siguiente paso"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/ErrUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#FF0000"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="@+id/RegUsername"
-        app:layout_constraintTop_toBottomOf="@+id/RegUsername" />
-
-    <TextView
-        android:id="@+id/ErrPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#FF0000"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="@+id/RegPassword"
-        app:layout_constraintTop_toBottomOf="@+id/RegPassword" />
-
-    <TextView
-        android:id="@+id/ErrConfirmPas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#FF0000"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="@+id/RegConfirmPas"
-        app:layout_constraintTop_toBottomOf="@+id/RegConfirmPas" />
-
-    <TextView
-        android:id="@+id/ErrEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#FF0000"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="@+id/RegEmail"
-        app:layout_constraintTop_toBottomOf="@+id/RegEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

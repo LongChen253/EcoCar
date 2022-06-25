@@ -3,10 +3,89 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable-anydpi/ic_counter_Add.xml" value="0.209" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable-mdpi/ic_password.xml" value="0.1755" />
         <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
-        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/asd.xml" value="0.185" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/bc_chat.xml" value="0.1245" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/bc_close.xml" value="0.1755" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/bc_round.xml" value="0.124" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/bc_search.xml" value="0.224" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/bc_sent.xml" value="0.185" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_add_passanger.xml" value="0.165" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_agenda.xml" value="0.165" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_arrow_down.xml" value="0.165" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_calendar.xml" value="0.2365" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_counter_add.xml" value="0.209" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.237" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_edit.xml" value="0.1745" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_favourite.xml" value="0.165" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_female.xml" value="0.184" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2595" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_location.xml" value="0.186" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_mail.xml" value="0.1745" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_male.xml" value="0.184" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_nextactivity.xml" value="0.25" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_phone.xml" value="0.1745" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_price.xml" value="0.17" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_profile.xml" value="0.1745" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_publicate.xml" value="0.188" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_search.xml" value="0.1745" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_send.xml" value="0.1895" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_star.xml" value="0.1745" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/drawable/ic_write_message.xml" value="0.184" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_add_car_form.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_chat.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_consult_comment.xml" value="0.2" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_data_form.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_date_time_picker.xml" value="0.2125" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_edit_event.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_edit_profile_image.xml" value="0.152" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_events_list.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_filtered_travel_search_results.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_forget_password.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_habitual_date.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_main_page.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_my_pub_res_trips.xml" value="0.21822916666666667" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_num_passangers.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_other_user_profile.xml" value="0.21875" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_passengers_counter.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_pv_destination.xml" value="0.176" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_pv_ir.xml" value="0.2171875" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_pv_origin.xml" value="0.1" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_pv_preferences.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_pv_price.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_pv_salir.xml" value="0.264" />
         <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_sent.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_travel_detail_info.xml" value="0.24126637554585154" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_travel_search_results.xml" value="0.2789808917197452" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_travels_filter.xml" value="0.19113814074717636" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_user_profile_info_form.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/activity_write_comment.xml" value="0.4" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/comment.xml" value="0.4" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/event.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/favourite.xml" value="0.5863787375415282" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_agenda.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_dashboard.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_favourite.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_home.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_notifications.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_publicate.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_publish.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_reserve.xml" value="0.536" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/fragment_test.xml" value="0.1" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/habitual.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/passangers_counter.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/passenger.xml" value="0.190625" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/received.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/sent.xml" value="0.264" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/single_item_counter.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/layout/travel.xml" value="0.3653366583541147" />
+        <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />
         <entry key="..\:/Users/Long/AndroidStudioProjects/EcoCar/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.124" />
       </map>

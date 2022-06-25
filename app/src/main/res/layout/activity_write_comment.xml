@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WriteComment"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valora el conductor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/Comment_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stepSize="1"
+        android:rating="0.0"
+        android:isIndicator="false"
+        android:progressTint="@color/quantum_yellow"
+        android:layout_gravity="center">
+    </RatingBar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comentario"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableRight="@drawable/ic_edit3"
+        android:drawablePadding="5dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/Comment_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/Comment_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="subir comentario"/>
+
+
+</LinearLayout>

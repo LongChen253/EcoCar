@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">EcoCar</string>
-    <string name="forget_password"><u>Oblidar la contrasenya?</u></string>
+    <string name="forget_password"><u>¿Olvidar la contraseña?</u></string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_publicate">Publicar</string>
+    <string name="title_reserve">Reservar</string>
+    <string name="title_agenda">Agenda</string>
+    <string name="title_favourite">Favorito</string>
+    <string name="title_profile">Perfil</string>
+    <string name="label_publicate">Publicar viaje</string>
+    <string name="label_reserve">Reservar viaje</string>
+    <string name="label_agenda">Mi agenda</string>
+    <string name="label_favourite">Conductores preferidos</string>
+    <string name="label_profile">Mi perfil</string>
+    <string name="title_activity_pv_origin">PV_Origin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

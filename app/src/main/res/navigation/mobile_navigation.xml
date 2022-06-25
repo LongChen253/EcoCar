@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_reserve">
+    <fragment
+        android:id="@+id/navigation_publicate"
+        android:name="com.example.ecocar.Publish"
+        android:label="@string/label_publicate"
+        tools:layout="@layout/fragment_publish" />
+    <fragment
+        android:id="@+id/navigation_reserve"
+        android:name="com.example.ecocar.Reserve"
+        android:label="@string/label_reserve"
+        tools:layout="@layout/fragment_reserve" />
+    <fragment
+        android:id="@+id/navigation_agenda"
+        android:name="com.example.ecocar.Agenda"
+        android:label="@string/label_agenda"
+        tools:layout="@layout/fragment_agenda" />
+    <fragment
+        android:id="@+id/navigation_favourite"
+        android:name="com.example.ecocar.Favourite"
+        android:label="@string/label_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.ecocar.Profile"
+        android:label="@string/label_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

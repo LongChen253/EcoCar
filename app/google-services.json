@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "810106423057",
+    "firebase_url": "https://ecocar-c9135-default-rtdb.firebaseio.com",
+    "project_id": "ecocar-c9135",
+    "storage_bucket": "ecocar-c9135.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810106423057:android:a8cc639784519981352eb0",
+        "android_client_info": {
+          "package_name": "com.example.ecocar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810106423057-s4chqdqr93h86p1bk2i9l1sc8lb7nk66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecocar",
+            "certificate_hash": "78f309c48576fb010d81dafaa1eb815ec2ca6461"
+          }
+        },
+        {
+          "client_id": "810106423057-l98benmobqtffkpcm1h9vgikf5bomrjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCESVH_APqaH_JodmQycAR3ZivopphcnLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810106423057-l98benmobqtffkpcm1h9vgikf5bomrjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

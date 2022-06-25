@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TravelDetailInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/DetailReserveLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/DetailWriteMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailDivider3">
+
+                <TextView
+                    android:id="@+id/DetailWriteDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:drawableRight="@drawable/ic_write_message"
+                    android:drawablePadding="10dp"
+                    android:text="Contactar con Long Chen"
+                    android:textColor="#2FA5FF"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/DetailDivider2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailPriceText" />
+
+            <TextView
+                android:id="@+id/DetailPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="7,00 €"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/DetailPriceText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/DetailPriceText" />
+
+            <TextView
+                android:id="@+id/DetailPriceText"
+                android:layout_width="127dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Importe total para 1 pasajero"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailDivider1" />
+
+            <TextView
+                android:id="@+id/DetailDistanceDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="A 10 km de tu punto de llegada"
+                android:textSize="11sp"
+                android:textStyle="italic"
+                app:drawableLeftCompat="@drawable/ic_walk"
+                app:layout_constraintStart_toStartOf="@+id/DetailEndCity"
+                app:layout_constraintTop_toBottomOf="@+id/DetailEndCity" />
+
+            <TextView
+                android:id="@+id/DetailEndCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Vall d'Hebron"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/DetailDesAddress"
+                app:layout_constraintTop_toBottomOf="@+id/DetailDesAddress" />
+
+            <TextView
+                android:id="@+id/DetailDesAddress"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="CEIP Marta Mata"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/DetailEndTime"
+                app:layout_constraintStart_toStartOf="@+id/DetailOriAddress"
+                app:layout_constraintTop_toTopOf="@+id/DetailEndTime" />
+
+            <TextView
+                android:id="@+id/DetailIniCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Vall d'Hebron"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/DetailOriAddress"
+                app:layout_constraintTop_toBottomOf="@+id/DetailOriAddress" />
+
+            <TextView
+                android:id="@+id/DetailOriAddress"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Avinguda dels Països Catalans, 86, 17800 Olot, Girona, España"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/DetailIniTime"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/DetailIniTime"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="28dp"
+                android:layout_height="192dp"
+                android:layout_marginStart="2dp"
+                android:contentDescription="polyline"
+                app:layout_constraintBottom_toBottomOf="@+id/DetailEndTime"
+                app:layout_constraintStart_toEndOf="@+id/DetailIniTime"
+                app:layout_constraintTop_toTopOf="@+id/DetailIniTime"
+                app:srcCompat="@mipmap/ic_polyline" />
+
+            <TextView
+                android:id="@+id/DetailIniTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="18:00"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/DetailDate"
+                app:layout_constraintTop_toBottomOf="@+id/DetailDate" />
+
+            <TextView
+                android:id="@+id/DetailEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="18:00"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/DetailIniTime"
+                app:layout_constraintStart_toStartOf="@+id/DetailIniTime"
+                app:layout_constraintTop_toBottomOf="@+id/DetailIniTime" />
+
+            <TextView
+                android:id="@+id/DetailDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Jue. 19 mayo"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DetailDistanceOri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_walk"
+                android:gravity="center"
+                android:text="A 10 km de tu punto de salida"
+                android:textSize="11sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@+id/DetailIniCity"
+                app:layout_constraintTop_toBottomOf="@+id/DetailIniCity" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/DetailDivider1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailDistanceDes" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/DetailProfileAccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailDivider2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/DetailUserImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/DetailDivider2" />
+
+                <TextView
+                    android:id="@+id/DetailDriverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Long Chen"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/DetailUserImage"
+                    app:layout_constraintTop_toTopOf="@+id/DetailUserImage" />
+
+                <TextView
+                    android:id="@+id/DetailDriverlStars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="4,8"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+                    app:layout_constraintStart_toEndOf="@+id/imageView28"
+                    app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/DetailUserImage"
+                    app:layout_constraintStart_toStartOf="@+id/DetailDriverName"
+                    app:srcCompat="@drawable/ic_star" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/DetailUserImage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/DetailUserImage"
+                    app:srcCompat="@drawable/ic_keyboard_right" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/DetailDivider3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:dividerInsetEnd="20dp"
+                app:dividerInsetStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailProfileAccess" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/DetailDivider4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetEnd="20dp"
+                app:dividerInsetStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailWriteMessage"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/DetailWriteOpinion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailDivider4"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:drawableRight="@drawable/ic_edit2"
+                    android:drawablePadding="10dp"
+                    android:text="Valorar este viaje"
+                    android:textColor="#2FA5FF"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/DetailDivider5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetEnd="20dp"
+                app:dividerInsetStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailWriteOpinion" />
+
+            <TextView
+                android:id="@+id/DetailPet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="12dp"
+                android:gravity="left|center"
+                android:text="Viaje con mascota"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailDivider5" />
+
+            <TextView
+                android:id="@+id/DetailLuggage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:text="Viaje con equipaje"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailPet" />
+
+            <TextView
+                android:id="@+id/DetailSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:text="Posibilidad de fumar"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailLuggage" />
+
+            <TextView
+                android:id="@+id/DetailFaceM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:text="Uso obligatoriao de mascarilla"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailSmoke" />
+
+            <TextView
+                android:id="@+id/DetailMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:text="Viaje con música"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailFaceM" />
+
+            <TextView
+                android:id="@+id/DetailTalk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:text="Hablar con el conductor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailMusic" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/DetailDivider6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:dividerInsetEnd="20dp"
+                app:dividerInsetStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailTalk" />
+
+            <TextView
+                android:id="@+id/DetailTravelCar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:drawableLeft="@drawable/ic_car"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="9457BLY Opel Blanco"
+                android:textColor="#5E67B5"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailDivider6" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/DetailDivider7"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailTravelCar" />
+
+            <TextView
+                android:id="@+id/DetailPassengers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Pasajeros"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DetailDivider7" />
+
+            <TextView
+                android:id="@+id/DetailNumPas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:paddingBottom="20dp"
+                android:text="0/2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/DetailPassengers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/DetailPassengers" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/DetailListOfPassengers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="40dp"
+                app:layout_constraintTop_toBottomOf="@id/DetailPassengers" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/DetailReserveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/DetailReserveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESERVAR" />
+    </RelativeLayout>
+
+</RelativeLayout>

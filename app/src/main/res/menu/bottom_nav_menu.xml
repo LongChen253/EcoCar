@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_reserve"
+        android:icon="@drawable/ic_search"
+        android:title="@string/title_reserve" />
+
+    <item
+        android:id="@+id/navigation_publicate"
+        android:icon="@drawable/ic_publicate"
+        android:title="@string/title_publicate" />
+
+    <item
+        android:id="@+id/navigation_agenda"
+        android:icon="@drawable/ic_agenda"
+        android:title="@string/title_agenda" />
+
+    <item
+        android:id="@+id/navigation_favourite"
+        android:icon="@drawable/ic_favourite"
+        android:title="@string/title_favourite" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/title_profile" />
+
+
+</menu>

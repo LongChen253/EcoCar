@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileImage">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/EditProfile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_image_default"
+        app:civ_border_color="#195B8C"
+        app:civ_border_width="2dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33"/>
+
+    <Button
+        android:id="@+id/EditProfile_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="guardar"
+        app:layout_constraintEnd_toEndOf="@+id/EditProfile_change"
+        app:layout_constraintStart_toStartOf="@+id/EditProfile_change"
+        app:layout_constraintTop_toBottomOf="@+id/EditProfile_change" />
+
+    <Button
+        android:id="@+id/EditProfile_close"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="cancelar"
+        app:backgroundTint="#CC4545"
+        app:layout_constraintEnd_toEndOf="@+id/EditProfile_save"
+        app:layout_constraintStart_toStartOf="@+id/EditProfile_save"
+        app:layout_constraintTop_toBottomOf="@+id/EditProfile_save" />
+
+    <Button
+        android:id="@+id/EditProfile_change"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="cambiar foto"
+        app:layout_constraintEnd_toEndOf="@+id/EditProfile_image"
+        app:layout_constraintStart_toStartOf="@+id/EditProfile_image"
+        app:layout_constraintTop_toBottomOf="@+id/EditProfile_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/TravelParent"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp"
+    app:contentPadding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/TravelEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="18:00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/TravelIniTime"
+            app:layout_constraintStart_toStartOf="@+id/TravelIniTime"
+            app:layout_constraintTop_toBottomOf="@+id/TravelIniTime"></TextView>
+
+        <TextView
+            android:id="@+id/TravelDuration"
+            android:layout_width="57dp"
+            android:layout_height="33dp"
+            android:layout_below="@id/TravelEndTime"
+            android:gravity="center|right"
+            android:text="1d12h30m"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/TravelEndTime"
+            app:layout_constraintEnd_toEndOf="@+id/TravelIniTime"
+            app:layout_constraintTop_toBottomOf="@+id/TravelIniTime"></TextView>
+
+        <TextView
+            android:id="@+id/TravelIniTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="18:00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_marginTop="8dp"></TextView>
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="18dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="polyline"
+            app:layout_constraintBottom_toBottomOf="@+id/TravelEndTime"
+            app:layout_constraintStart_toEndOf="@+id/TravelIniTime"
+            app:layout_constraintTop_toTopOf="@+id/TravelIniTime"
+            app:layout_constraintVertical_bias="0.571"
+            app:srcCompat="@mipmap/ic_polyline" />
+
+        <TextView
+            android:id="@+id/TravelOriAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Ripollet"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/TravelIniTime"
+            app:layout_constraintStart_toEndOf="@+id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/TravelIniTime" />
+
+        <TextView
+            android:id="@+id/TravelDesAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Girona"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/TravelEndTime"
+            app:layout_constraintStart_toStartOf="@+id/TravelOriAddress"
+            app:layout_constraintTop_toTopOf="@+id/TravelEndTime" />
+
+        <TextView
+            android:id="@+id/TravelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="4,00 €"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/TravelUserImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/TravelEndTime"
+            app:layout_constraintStart_toStartOf="@id/TravelEndTime"
+            app:layout_constraintTop_toBottomOf="@id/TravelEndTime"/>
+
+        <TextView
+            android:id="@+id/TravelDriverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Long Chen"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/TravelUserImage"
+            app:layout_constraintTop_toTopOf="@+id/TravelUserImage" />
+
+        <TextView
+            android:id="@+id/TravelDriverStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="4,8"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+            app:layout_constraintStart_toEndOf="@+id/imageView28"
+            app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toStartOf="@+id/TravelDriverName"
+            app:layout_constraintTop_toBottomOf="@+id/TravelDriverName"
+            app:srcCompat="@drawable/ic_star" />
+
+        <TextView
+            android:id="@+id/TravelDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance: 1km"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/TravelDesAddress"
+            app:layout_constraintStart_toStartOf="@+id/TravelOriAddress"
+            app:layout_constraintTop_toBottomOf="@+id/TravelOriAddress" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
